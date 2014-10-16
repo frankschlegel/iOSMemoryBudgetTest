@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		01930EBC19EFC42B007756ED /* PhotosUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01930EBB19EFC42B007756ED /* PhotosUI.framework */; };
+		01930EBE19EFC42B007756ED /* Photos.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01930EBD19EFC42B007756ED /* Photos.framework */; };
+		01930EC919EFC42B007756ED /* MemoryTestPhotoExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 01930EBA19EFC42B007756ED /* MemoryTestPhotoExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		019DBFDF19EFC68300726E4D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F58DD8164838D5008566AE /* ViewController.m */; };
+		019DBFE019EFC73C00726E4D /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 55F58DD1164838D5008566AE /* MainStoryboard.storyboard */; };
 		55A231FC16488541001C3E62 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 55A231FB16488541001C3E62 /* README.md */; };
 		55F58DBA164838D4008566AE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F58DB9164838D4008566AE /* UIKit.framework */; };
 		55F58DBC164838D4008566AE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 55F58DBB164838D4008566AE /* Foundation.framework */; };
@@ -21,7 +26,42 @@
 		55F58DD9164838D5008566AE /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 55F58DD8164838D5008566AE /* ViewController.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		01930EC719EFC42B007756ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F58DAC164838D4008566AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01930EB919EFC42B007756ED;
+			remoteInfo = MemoryTestPhotoExtension;
+		};
+		01930ECA19EFC42B007756ED /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 55F58DAC164838D4008566AE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 01930EB919EFC42B007756ED;
+			remoteInfo = MemoryTestPhotoExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01930ECF19EFC42B007756ED /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				01930EC919EFC42B007756ED /* MemoryTestPhotoExtension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		01930EBA19EFC42B007756ED /* MemoryTestPhotoExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = MemoryTestPhotoExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		01930EBB19EFC42B007756ED /* PhotosUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = PhotosUI.framework; path = System/Library/Frameworks/PhotosUI.framework; sourceTree = SDKROOT; };
+		01930EBD19EFC42B007756ED /* Photos.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Photos.framework; path = System/Library/Frameworks/Photos.framework; sourceTree = SDKROOT; };
+		01930EC119EFC42B007756ED /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		55A231FB16488541001C3E62 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = SOURCE_ROOT; };
 		55F58DB5164838D4008566AE /* MemoryTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MemoryTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		55F58DB9164838D4008566AE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -42,6 +82,15 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		01930EB719EFC42B007756ED /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01930EBC19EFC42B007756ED /* PhotosUI.framework in Frameworks */,
+				01930EBE19EFC42B007756ED /* Photos.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F58DB2164838D4008566AE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -55,10 +104,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		01930EBF19EFC42B007756ED /* MemoryTestPhotoExtension */ = {
+			isa = PBXGroup;
+			children = (
+				01930EC119EFC42B007756ED /* Info.plist */,
+			);
+			path = MemoryTestPhotoExtension;
+			sourceTree = "<group>";
+		};
 		55F58DAA164838D4008566AE = {
 			isa = PBXGroup;
 			children = (
 				55F58DBF164838D4008566AE /* MemoryTest */,
+				01930EBF19EFC42B007756ED /* MemoryTestPhotoExtension */,
 				55F58DB8164838D4008566AE /* Frameworks */,
 				55F58DB6164838D4008566AE /* Products */,
 			);
@@ -68,6 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				55F58DB5164838D4008566AE /* MemoryTest.app */,
+				01930EBA19EFC42B007756ED /* MemoryTestPhotoExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -78,6 +137,8 @@
 				55F58DB9164838D4008566AE /* UIKit.framework */,
 				55F58DBB164838D4008566AE /* Foundation.framework */,
 				55F58DBD164838D4008566AE /* CoreGraphics.framework */,
+				01930EBB19EFC42B007756ED /* PhotosUI.framework */,
+				01930EBD19EFC42B007756ED /* Photos.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -113,6 +174,23 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		01930EB919EFC42B007756ED /* MemoryTestPhotoExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01930ECE19EFC42B007756ED /* Build configuration list for PBXNativeTarget "MemoryTestPhotoExtension" */;
+			buildPhases = (
+				01930EB619EFC42B007756ED /* Sources */,
+				01930EB719EFC42B007756ED /* Frameworks */,
+				01930EB819EFC42B007756ED /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MemoryTestPhotoExtension;
+			productName = MemoryTestPhotoExtension;
+			productReference = 01930EBA19EFC42B007756ED /* MemoryTestPhotoExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		55F58DB4164838D4008566AE /* MemoryTest */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 55F58DDC164838D5008566AE /* Build configuration list for PBXNativeTarget "MemoryTest" */;
@@ -120,10 +198,13 @@
 				55F58DB1164838D4008566AE /* Sources */,
 				55F58DB2164838D4008566AE /* Frameworks */,
 				55F58DB3164838D4008566AE /* Resources */,
+				01930ECF19EFC42B007756ED /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				01930EC819EFC42B007756ED /* PBXTargetDependency */,
+				01930ECB19EFC42B007756ED /* PBXTargetDependency */,
 			);
 			name = MemoryTest;
 			productName = MemoryTest;
@@ -138,6 +219,11 @@
 			attributes = {
 				LastUpgradeCheck = 0450;
 				ORGANIZATIONNAME = "Jan Ilavsky";
+				TargetAttributes = {
+					01930EB919EFC42B007756ED = {
+						CreatedOnToolsVersion = 6.0.1;
+					};
+				};
 			};
 			buildConfigurationList = 55F58DAF164838D4008566AE /* Build configuration list for PBXProject "MemoryTest" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -152,11 +238,20 @@
 			projectRoot = "";
 			targets = (
 				55F58DB4164838D4008566AE /* MemoryTest */,
+				01930EB919EFC42B007756ED /* MemoryTestPhotoExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		01930EB819EFC42B007756ED /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019DBFE019EFC73C00726E4D /* MainStoryboard.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F58DB3164838D4008566AE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -173,6 +268,14 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		01930EB619EFC42B007756ED /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				019DBFDF19EFC68300726E4D /* ViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		55F58DB1164838D4008566AE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -184,6 +287,19 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		01930EC819EFC42B007756ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01930EB919EFC42B007756ED /* MemoryTestPhotoExtension */;
+			targetProxy = 01930EC719EFC42B007756ED /* PBXContainerItemProxy */;
+		};
+		01930ECB19EFC42B007756ED /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 01930EB919EFC42B007756ED /* MemoryTestPhotoExtension */;
+			targetProxy = 01930ECA19EFC42B007756ED /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		55F58DC2164838D4008566AE /* InfoPlist.strings */ = {
@@ -205,6 +321,64 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		01930ECC19EFC42B007756ED /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					PHOTO_EXTENSION_BUILD,
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = MemoryTestPhotoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		01930ECD19EFC42B007756ED /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = PHOTO_EXTENSION_BUILD;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				INFOPLIST_FILE = MemoryTestPhotoExtension/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 		55F58DDA164838D5008566AE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -282,6 +456,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		01930ECE19EFC42B007756ED /* Build configuration list for PBXNativeTarget "MemoryTestPhotoExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01930ECC19EFC42B007756ED /* Debug */,
+				01930ECD19EFC42B007756ED /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		55F58DAF164838D4008566AE /* Build configuration list for PBXProject "MemoryTest" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
